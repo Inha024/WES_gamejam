@@ -5,16 +5,16 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
     float curDist = 5;
-    GameObject[] Spike;
+    GameObject[] Items;
     GameObject Spikes;
 
     // Use this for initialization
     void Start()
     {
-        Spike = GameObject.FindGameObjectsWithTag("Spike");
+        Items = GameObject.FindGameObjectsWithTag("Item");
         curDist = 5;
 
-        foreach (GameObject item in Spike)
+        foreach (GameObject item in Items)
         {
             float dist = Vector3.Distance(transform.position, item.transform.position);
             if (dist > curDist)
