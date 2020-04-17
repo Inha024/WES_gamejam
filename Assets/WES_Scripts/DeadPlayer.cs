@@ -4,16 +4,10 @@ using UnityEngine;
 
 public class DeadPlayer : MonoBehaviour
 {
-    private Rigidbody2D rb2d;
     public float xInput;
     public float yInput;
     public float speed = 10;
     // Start is called before the first frame update
-    void Start()
-    {
-        rb2d = GetComponent<Rigidbody2D>();
-        rb2d.isKinematic = true;
-    }
 
     // Update is called once per frame
     void Update()

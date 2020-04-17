@@ -25,6 +25,9 @@ public class AlivePlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        rb2d = GetComponent<Rigidbody2D>();
+        
+        
         if (Input.GetKey(KeyCode.A))//If A is pressed
         {
             Move(Vector3.left);//Move in the Vector3 direction
